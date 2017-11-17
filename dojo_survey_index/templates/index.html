@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--<script src="{{url_for('static',filename='results.html')}}"></script>-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/style.css')}}"/>
 
 </head>
 <body>
-<div style="border:solid ">
+<div  style="border: 5px solid black;
+margin: 358px;
+padding: 18px;" >
   <form action="/results" method='post' id="applicationForm">
     
     <label for="yourName">Your Name</label>
     <input type="text" id="yourName" name="name"/><br><br>
-   <!-- <label for="location">Dojo Location</label>
-    <input type="text" id="location" name="schoolLocation"/>
-    <br>
-    <br>
-
-    <label for="language">Language</label>
-    <input type="text" id="language" name="favLanguage"/><br><br>-->
-    
     
   </form>
   Dojo Location:<select name="schoolLocation" form="applicationForm">
