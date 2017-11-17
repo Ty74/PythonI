@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<script src="{{url_for('static',filename='results.html')}}"></script>-->
+
+</head>
+<body>
+<div style="border:solid ">
+  <form action="/results" method='post' id="applicationForm">
+    
+    <label for="yourName">Your Name</label>
+    <input type="text" id="yourName" name="name"/><br><br>
+   <!-- <label for="location">Dojo Location</label>
+    <input type="text" id="location" name="schoolLocation"/>
+    <br>
+    <br>
+
+    <label for="language">Language</label>
+    <input type="text" id="language" name="favLanguage"/><br><br>-->
+    
+    
+  </form>
+  Dojo Location:<select name="schoolLocation" form="applicationForm">
+        <option value="Chicago">Chicago</option>
+        <option  value="Schaumburg">Schaumburg</option>
+    </select><br><br>
+  Favorite Language: <select name="favLanguage"  form="applicationForm">
+        <option value="Java">Java</option>
+        <option  value="python">python</option>
+    </select><br><br>
+    Comment (optional)<br><br>
+    <textarea name="comments" form="applicationForm"></textarea><br><br>
+    <input type="submit" value="getUsers" form="applicationForm" />
+
+</div>
+</body>
+</html>
+
+
